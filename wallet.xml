@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/walletNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wallet Name (e.g., Personal, Business)"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#03A9F4"/>
+
+
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:maxLength="16"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@id/walletNameEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C8E6C9"/>
+
+
+    <EditText
+        android:id="@+id/expirationDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiration Date (MM/YY)"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:maxLength="5"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@id/cardNumberEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C8E6C9"/>
+
+
+    <EditText
+        android:id="@+id/cvvEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVV"
+        android:textColorHint="@color/black"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_below="@id/expirationDateEditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C8E6C9"/>
+
+
+    <Button
+        android:id="@+id/saveWalletButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Wallet"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_below="@id/cvvEditText"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#03A9F4"/>
+
+</RelativeLayout>

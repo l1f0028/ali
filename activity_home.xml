@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="49dp"
+        android:contentDescription="adda"
+        android:src="@drawable/img" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trips"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium" />
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It looks like you have no upcoming trips"
+        android:textColor="#03A9F4"
+        android:textSize="16sp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif" />
+
+    <ImageButton
+        android:id="@+id/fab_add"
+        android:layout_width="58dp"
+        android:layout_height="71dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="74dp"
+        android:backgroundTint="#64399E"
+        android:contentDescription="add"
+        android:src="@drawable/ic_add" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#263238"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/nav_trips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="trips"
+            android:src="@drawable/ic_trips"
+            app:tint="#03A9F4"
+            />
+        <ImageButton
+            android:id="@+id/nav_trip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="trip"
+            android:src="@drawable/baseline_add_alert_24"
+            app:tint="#03A9F4"
+            />
+
+        <ImageButton
+            android:id="@+id/nav_pro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="pro"
+            android:src="@drawable/ic_pro"
+            app:tint="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/nav_unfiled"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="unfiled"
+            android:src="@drawable/baseline_ic_unfiled"
+            app:tint="#03A9F4" />
+
+        <ImageButton
+            android:id="@+id/nav_tri"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="tri"
+            android:src="@drawable/baseline_account_circle_24"
+            app:tint="#03A9F4"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
